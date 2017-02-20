@@ -29,6 +29,8 @@ See the accompanying LICENSE file for applicable license.
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 exclude-result-prefixes="xs">
   
+  <xsl:include href="dita-utilities.xsl"/>
+
   <xsl:template name="output-message">
     <xsl:param name="ctx" select="." tunnel="yes"/>
     <xsl:param name="msg" select="'***'"/>
